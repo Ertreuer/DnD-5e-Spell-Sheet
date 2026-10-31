@@ -56,12 +56,12 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);text-al
 .bubble{display:inline-block;border:1px solid var(--acc);color:var(--pip);border-radius:99px;padding:1px 10px;font-size:.75rem;margin-left:8px}
 input:focus,select:focus,textarea:focus,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
 button:hover{border-color:var(--acc)}
-@page{margin:0}
-@media print{.noprint{display:none!important}body{background:#fff;color:#000;font-size:11px;line-height:1.3}main{max-width:none;padding:10mm}header{margin-bottom:6px}h1{font-size:1.1rem}header input{border:0;padding:0;max-width:none;background:transparent}.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;align-items:start}.card{break-inside:avoid;page-break-inside:avoid;margin:0;padding:6px 8px;background:#fff;border-color:#999;-webkit-print-color-adjust:exact;print-color-adjust:exact}.card h3{font-size:.95rem}.desc{margin:2px 0}.tag{font-size:.7rem;padding:0 6px;border:0;background:#eee;-webkit-print-color-adjust:exact;print-color-adjust:exact}.slots{background:#fff;border-color:#999}.sc input{border:0;background:transparent}.pip{width:12px;height:12px;border-width:1.5px;border-color:#000;background:#000}.pip.used{background:transparent}footer{display:none}}
+.pt,.pt>thead,.pt>tbody,.pt>tfoot,.pt tr,.pt td{display:block;padding:0}.sp{display:none}@page{margin:0}
+@media print{.noprint{display:none!important}body{background:#fff;color:#000;font-size:11px;line-height:1.3}main{max-width:none;padding:0 10mm}header{margin-bottom:6px}h1{font-size:1.1rem}header input{border:0;padding:0;max-width:none;background:transparent}.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;align-items:start}.card{break-inside:avoid;page-break-inside:avoid;margin:0;padding:6px 8px;background:#fff;border-color:#999;-webkit-print-color-adjust:exact;print-color-adjust:exact}.card h3{font-size:.95rem}.desc{margin:2px 0}.tag{font-size:.7rem;padding:0 6px;border:0;background:#eee;-webkit-print-color-adjust:exact;print-color-adjust:exact}.slots{background:#fff;border-color:#999}.sc input{border:0;background:transparent}.pip{width:12px;height:12px;border-width:1.5px;border-color:#000;background:#000}.pip.used{background:transparent}footer{display:none}.pt{display:table;width:100%}.pt>thead{display:table-header-group}.pt>tbody{display:table-row-group}.pt>tfoot{display:table-footer-group}.pt tr{display:table-row}.pt td{display:table-cell}.sp{display:block;height:20mm}}
 </style>
 </head>
 <body>
-<main>
+<main><table class="pt"><thead><tr><td><div class="sp"></div></td></tr></thead><tbody><tr><td>
 
 <section id="home">
   <header><div><h1>📖 Spell List</h1><div class="meta">One spell list per character – pick one or start a new one</div></div></header>
@@ -131,7 +131,7 @@ button:hover{border-color:var(--acc)}
 </section>
 
 <footer>Made by Ertreuer<span class="bubble">made with AI</span></footer>
-</main>
+</td></tr></tbody><tfoot><tr><td><div class="sp"></div></td></tr></tfoot></table></main>
 
 <script>
 var KEY="dnd-spells-v2",OLD="dnd-spells-v1";
