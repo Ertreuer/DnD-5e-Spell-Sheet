@@ -25,6 +25,10 @@ A simple, single-file spell list manager for your Dungeons & Dragons characters.
 
 That's it. The whole app is one HTML file with no external dependencies.
 
+Or
+
+1. Open the link https://ertreuer.github.io/DnD-5e-Spell-Sheet/ and start with How to use.
+
 ## How to use
 
 ### Create a list
